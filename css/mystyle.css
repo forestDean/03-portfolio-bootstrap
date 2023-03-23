@@ -1,0 +1,39 @@
+:root {
+    --page-background: silver;
+    --forestGreen: darkolivegreen;
+    --mainColor: silver;
+    --redBox: 1px solid red;
+    --blueBox: 1px solid blue;
+    --greenBox: 1px solid green;
+    --whiteBox:  1px solid white;
+    --greyBox:  1px solid lightgrey;
+    --cardWidth: 27%;
+    --cardBorder: 2px dotted white;
+    --forestText: 'Solway', sans-serif;
+    --bodyText: 16px 'Lato', sans-serif;
+    --headerTextPad: 0 6vw;
+    --headerImgPad: 5.75vw;
+    --headerLineHeight: 50px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.box {
+    background-color: rgba(255, 0, 0, 0.1) !important;
+    border: var(--redBox);
+    height: 500px;
+}
+
+.box1 {
+    background-color: rgba(0, 255, 128, 0.1) !important;
+    border: var(--redBox);
+    height: 300px;
+}
