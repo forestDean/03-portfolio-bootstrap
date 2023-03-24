@@ -22,18 +22,78 @@
     padding: 0;
 }
 
+h1{
+   font-family: var(--forestText);
+   font-weight: bold;
+}
 .row {
     display: flex;
 }
 
 .box {
-    background-color: rgba(255, 0, 0, 0.1) !important;
+    background-color: rgba(255, 0, 0, 0.1);
     border: var(--redBox);
-    height: 500px;
+    min-height: 400px;
 }
 
 .box1 {
-    background-color: rgba(0, 255, 128, 0.1) !important;
+    background-color: rgba(0, 255, 128, 0.1);
     border: var(--redBox);
     height: 300px;
 }
+ .margin {
+    background-color: rgba(0, 255, 128, 0.1);
+ }
+
+nav ul {
+    border: var(--greenBox);
+    /* display: inline-block; */
+    text-align: left;
+    list-style-type: none;
+    color: red;
+}
+
+nav ul li {
+}
+
+
+/* JumboTron */
+
+.container {
+    /* width: 500px !important; */
+    background-color: rgba(0, 0, 255, 0.075);
+    display: flex;
+    /* justify-content: space-between;
+    align-items: flex-end;  */
+ }
+
+.header {
+    text-align: right;
+    width: 100%;
+    color: grey;
+    margin: 0 0 0 auto !important;
+ }
+
+ .header ul {
+    /* border: var(--greenBox); */
+    display: inline-block;
+    text-align: left;
+    list-style-type: none;
+ }
+
+ #topContact {
+    border: var(--greenBox);
+    display: inline-block;
+    justify-items: flex-end;
+    /* align-self: flex-end; */
+ }
+
+ .topCont {
+    text-align: left;  
+ }
+
+
+ .headerCont img {
+    /* margin: 0 100% 0 0; */
+    border: var(--redBox);
+ }
