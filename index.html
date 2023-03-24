@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-  <head>
+    <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,74 +10,93 @@
     <link rel="stylesheet" href="./css/mystyle.css">
     <link rel="shortcut icon" type="image/x-icon" href="./graphics/favicon.ico">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Lato&family=Solway&display=fallback');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Solway&display=fallback');
     </style>
-
     <title>John Walton // Web Developer</title>
-  </head>
-  <body>
-    <div class="container-fluid">
 
-        <div class="row" id="header" title="header">
-            <!-- add Navbar -->
-            <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div> -->
-            <div class="col-2 box margin" id="navBar">
-                <img src="./graphics/favicon.ico" alt="">
-                <nav>
-                    <ul>
-                        <li>about</li>
-                        <li>projects</li>
-                        <li>skills</li>
-                        <li>contact</li>
-                    </ul>
-                </nav>
-            </div>
-      
+    </head>
 
-            <div class="col-10 box header jumbotron jumbotron-fluid">
-                <!-- Hero section / Jumbotron / add portrait picture -->
-                <div class="container-fluid headerCont">
-                    <img src="./images/20221119_john-walton_self-portrait_104e.jpg" id="portrait" height="300" width="300" alt="">
-                    <div class="topCont" id="topContact">
-                        <h1>John Walton</h1>
-                        <h2>web developer</h2>
-                        <ul>
-                            <li>linkedIn</li>
-                            <li>gitHub</li>
-                            <li>07905311888</li>
-                            <li>email@johnwalton.uk</li>
+    <body>
+
+    <div class="container-fluid ">
+
+        <header>
+            <div class="row" id="header" title="header">
+                <!-- add Navbar -->
+                <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div> -->
+                <div class="navbar flex-column justify-content-start align-items-start col-2 text-left text-white navbar-dark pl-4" id="navBar">
+                    <img src="./graphics/favicon.ico" class="mt-2" alt="">
+                    <nav class="w-100 mt-5 ">
+                        <ul class="w-100">
+                            <li><a href="#" class="text-white">about</a></li>
+                            <li><a href="#" class="text-white">projects</a></li>
+                            <li><a href="#" class="text-white">skills</a></li>
+                            <li><a href="#" class="text-white">contact</a></li>
                         </ul>
+                    </nav>
+                </div>
+        
+
+                <div class="col-10 jumbotron jumbotron-fluid bg-white"  id="header">
+                    <!-- Hero section / Jumbotron / add portrait picture -->
+                    <div class="container-fluid row justify-content-around headerCont">
+                        <img src="./images/20221119_john-walton_self-portrait_104e.jpg" class="border border-secondary"  id="portrait" height="300" width="300" alt="">
+                        <div class="text-left text-muted" id="topContact">
+                            <h1>John Walton</h1>
+                            <h2 class="">web developer</h2>
+                            <ul>
+                                <li><a href="#" class="text-muted">linkedIn</a></li>
+                                <li><a href="#" class="text-muted">gitHub</a></li>
+                                <li><a href="#" class="text-muted">07905 311 888</a></li>
+                                <li><a href="#" class="text-muted">email@johnwalton.uk</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
+            </div> 
+        </header>
+
+        <main>
+            <div class="row" id="about">
+                <!-- //ABOUT -->
+                <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div> -->
+                <div class="col-2 box1" id="aboutTab">about</div>
+                <div class="col-10 box1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium odio nec lorem ultrices, sit amet malesuada elit elementum. Donec at ante ut nunc varius aliquet ac a lorem. Nulla ultricies orci sed mi ultrices laoreet. Nulla tincidunt rhoncus dui eleifend iaculis. Ut facilisis sem dolor, sit amet fermentum magna rhoncus quis. Duis quis nulla semper, dignissim lacus fermentum, dignissim libero. In sed diam dui. Vestibulum eget tempor nisi. Mauris vitae lacus malesuada velit faucibus efficitur et vel dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                    </p>
+                    <p>Quisque sit amet leo tincidunt augue tempor eleifend nec id nisl. Nulla ligula erat, consequat eu interdum id, fermentum non massa. Integer vel nisl et ipsum facilisis ullamcorper. Pellentesque vel tristique ipsum, ut convallis mauris. Sed vestibulum erat non elit efficitur, in tristique arcu ultrices. Nullam sit amet auctor nisl. Sed mi massa, malesuada et tempor ut, aliquet at purus. Phasellus ultrices pretium odio vel facilisis. Phasellus a nulla ut leo finibus tincidunt eu sit amet augue.
+
+                    </p>
+                </div>
+            </div> 
+
+                
+            <div class="row">
+                <!-- //PROJECTS -->
+                <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div> -->
+                <div class="col-2 box1" id="projectsTab">projects</div>
+                <div class="col-10 box1">cards</div>
             </div>
 
-        </div> 
 
-         <div class="row">
-            <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div> -->
-            <div class="col-2 box1 margin">about</div>
-            <div class="col-10 box1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium odio nec lorem ultrices, sit amet malesuada elit elementum. Donec at ante ut nunc varius aliquet ac a lorem. Nulla ultricies orci sed mi ultrices laoreet. Nulla tincidunt rhoncus dui eleifend iaculis. Ut facilisis sem dolor, sit amet fermentum magna rhoncus quis. Duis quis nulla semper, dignissim lacus fermentum, dignissim libero. In sed diam dui. Vestibulum eget tempor nisi. Mauris vitae lacus malesuada velit faucibus efficitur et vel dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-                </p>
-                <p>Quisque sit amet leo tincidunt augue tempor eleifend nec id nisl. Nulla ligula erat, consequat eu interdum id, fermentum non massa. Integer vel nisl et ipsum facilisis ullamcorper. Pellentesque vel tristique ipsum, ut convallis mauris. Sed vestibulum erat non elit efficitur, in tristique arcu ultrices. Nullam sit amet auctor nisl. Sed mi massa, malesuada et tempor ut, aliquet at purus. Phasellus ultrices pretium odio vel facilisis. Phasellus a nulla ut leo finibus tincidunt eu sit amet augue.
-
-                </p>
+            <div class="row">
+                <!-- //SKILLS -->
+                <!-- <li> bulletpoint // -->
+                <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div> -->
+                <div class="col-2 box1" id="skillsTab">skills</div>
+                <div class="col-10 box1">cards</div>
             </div>
-         </div> 
+            
+            <!-- //BACK-TO-TOP -->
+        </main>
 
-         <div class="row">
-            <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div> -->
-            <div class="col-2 box1 margin">projects</div>
-            <div class="col-10 box1">
-                <div>cards</div>
-            </div>
-         </div>
+        <footer>
+        <!-- All hyperlinks should have a hover effect.
+        All buttons should display a box shadow upon hover. -->
+        </footer>
 
-         <footer>
-            <!-- All hyperlinks should have a hover effect.
-            All buttons should display a box shadow upon hover. -->
-         </footer>
-
+   <!-- end of page container -->
     </div>
 
 
@@ -92,5 +111,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>
