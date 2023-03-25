@@ -37,7 +37,7 @@ h1{
 }
 
 .box1 {
-    background-color: rgba(0, 255, 128, 0.1);
+    /* background-color: rgba(0, 255, 128, 0.1); */
     border: var(--redBox);
     height: 300px;
 }
@@ -75,10 +75,7 @@ nav ul li {
  }
 
  #topContact {
-    /* border: var(--greenBox); */
-    /* display: inline-block; */
-    /* justify-items: flex-end; */
-    /* align-self: flex-end; */
+   color: var(--forestGreen);
  }
 
  .topCont {
@@ -91,7 +88,24 @@ nav ul li {
     /* border: var(--redBox); */
  }
 
- #aboutTab, #projectsTab, #skillsTab {
+ #aboutTab, #projectsTab, #skillsTab, #backtoTop {
     background-color: var(--forestGreen); 
  }
+
+ #aboutText {
+   color: var(--forestGreen);
+ }
+
+ #backtoTop {
+   border: var(--redBox);
+ }
+
+ #footer {
+
+ }
+
+ #copyRight {
+   border: var(--blueBox);
+ }
+
 
