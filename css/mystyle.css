@@ -110,14 +110,22 @@ nav ul li {
   background-repeat: no-repeat; 
   background-size: cover;
   background-position: center;
-  border: var(--blueBox);
+  /* border: var(--blueBox); */
 }
 
 .card-img-overlay {
-  border: var(--redBox);
-  height 30%;
+  /* border: var(--redBox); */
+  height:35% !important;
+  background-color: rgba(85, 107, 47, 0.8);
+  cursor: pointer;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
 }
 
+#cardTab a{
+text-decoration: none;
+color: white;
+}
 .card-title {
   /* color: var(--forestGreen); */
 }
@@ -126,13 +134,26 @@ nav ul li {
   color: darkorange;
 }
 
-.img-fluid {
+.fillFig {
+  display: block;
+  height: 100%;
   width: 100%;
-  height: auto;
+  text-decoration: none;
 }
 
+#skills {
+  height: 400px;
+}
+
+#skillsTab {
+  border: var(--redBox);
+  color: red;
+
+ }
+
  #skillsList {
-  height: 450px;
+  border: var(--blueBox);
+
  }
 
 
