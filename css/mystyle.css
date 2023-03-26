@@ -8,6 +8,7 @@
     --whiteBox:  1px solid white;
     --greyBox:  1px solid lightgrey;
     --cardWidth: 27%;
+    --cardHeight: 300px;
     --cardBorder: 2px dotted white;
     --forestText: 'Solway', sans-serif;
     --bodyText: 16px 'Lato', sans-serif;
@@ -96,8 +97,42 @@ nav ul li {
    color: var(--forestGreen);
  }
 
+
+#card01 {
+
+}
+
+#card01, #card02, #card03 {
+  height: var(--cardHeight);
+}
+
+.card-img {
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  border: var(--blueBox);
+}
+
+.card-img-overlay {
+  border: var(--redBox);
+  height 30%;
+}
+
+.card-title {
+  /* color: var(--forestGreen); */
+}
+
+.card-text {
+  color: darkorange;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
  #skillsList {
-height: 450px;
+  height: 450px;
  }
 
 
