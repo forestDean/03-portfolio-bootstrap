@@ -107,6 +107,10 @@ nav a:hover {
   height: var(--cardHeight);
 }
 
+.cardBox {
+  position: relative;
+}
+
 .card-img {
   background-repeat: no-repeat; 
   background-size: cover;
@@ -121,12 +125,14 @@ nav a:hover {
   cursor: pointer;
   box-sizing: border-box !important;
   overflow: hidden !important;
+  /* z-index: 5; */
 }
 
 #cardTab a{
 text-decoration: none;
 color: white;
 }
+
 .card-title {
   /* color: var(--forestGreen); */
 }
