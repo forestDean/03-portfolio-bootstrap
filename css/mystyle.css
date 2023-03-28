@@ -2,6 +2,7 @@
     --page-background: silver;
     --forestGreen: darkolivegreen;
     --forestGreenBox: 1px solid darkolivegreen;
+    --tabHeight: 100px;
     --cardHeight: 150px;
     --skillsHeight: auto;
 
@@ -96,7 +97,8 @@ nav a:hover {
  }
 
  #aboutTab, #projectsTab, #skillsTab, #backtoTop {
-    background-color: var(--forestGreen); 
+    background-color: var(--forestGreen);
+    height: var(--tabHeight); 
  }
 
  #aboutText, #skillsList {
@@ -207,6 +209,7 @@ color: white;
  /* Small devices (landscape phones, 576px and up) */
  @media (min-width: 576px) {
   /* :root {--cardHeight: 150px;} */
+  
  }
  
  /* Medium devices (tablets, 768px and up) */
@@ -214,6 +217,7 @@ color: white;
   :root {
     --cardHeight: 250px;
     --skillsHeight: 450px;
+    --tabHeight: auto;
   }
  }
  
