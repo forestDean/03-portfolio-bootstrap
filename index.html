@@ -22,9 +22,34 @@
 
         <header>
             <div class="row border-0" id="header" title="header">
+                <!--hamburgerNavbar-->
+                <nav class="navbar navbar-expand-lg navbar-dark mt-0 w-100 px-4 d-md-none" id="hamburgerNav">
+                    <a class="navbar-brand" href="#">
+                        <img src="./graphics/favicon.ico" class="navbar-brand mt-2" alt="forestDean logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white h5" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white h5" href="#projects">projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white h5" href="#skills">skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white h5" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--end of hamburgerNavbar-->
                 <!-- add Navbar -->
-                <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div> -->
-                <div class="col-12 col-md-2 navbar flex-column justify-content-start align-items-start text-left text-white navbar-dark pl-4" id="navBar">
+                <div class="col-12 col-md-2 navbar flex-column justify-content-start align-items-start text-left text-white navbar-dark pl-4 d-none d-md-block" id="navBar">
                     <a class="navbar-brand" href="#">
                         <img src="./graphics/favicon.ico" class="navbar-brand mt-2" alt="forestDean logo">
                     </a>
@@ -93,10 +118,10 @@
                         </div>
 
                         <!-- card02 -->
-                        <div class="col-6 card flex-row mb-3 pl-0 pr-1 border-0" id="card02"> 
-                            <div class="pr-1 w-100 cardBox">
+                        <div class="col-12 col-md-6 card flex-row mb-3 p-0 pr-md-1 border-0" id="card02"> 
+                            <div class="pr-0 pr-md-1 w-100 cardBox">
                                 <div class="card-img h-100" style="background-image: url('./images/20230321_john-walton_technical_021e.jpg');"></div>        
-                                <div class="card-img-overlay mt-auto mr-1" id="cardTab">
+                                <div class="card-img-overlay mt-auto mr-0 mr-md-1" id="cardTab">
                                     <a href="https://johnwalton.photography" class="fillFig">
                                     <h5 class="card-title">Project 2</h5>
                                     <p class="card-text">Flexbox and CSS Grid</p>
@@ -106,10 +131,10 @@
                         </div>
 
                       <!-- card03 -->
-                      <div class="col-6 card flex-row mb-3 p-0 pl-1 border-0" id="card03"> 
-                        <div class="pl-1 w-100 cardBox">
+                      <div class="col-12 col-md-6 card flex-row mb-3 p-0 pl-md-1 border-0" id="card03"> 
+                        <div class="pl-0 pl-md-1 w-100 cardBox">
                             <div class="card-img h-100" style="background-image: url('./images/20230321_john-walton_technical_060e.jpg');"></div>        
-                            <div class="card-img-overlay mt-auto ml-1" id="cardTab">
+                            <div class="card-img-overlay mt-auto ml-0 ml-md-1" id="cardTab">
                                 <a href="https://johnwalton.photography" class="fillFig">
                                 <h5 class="card-title">Project 3</h5>
                                 <p class="card-text">Bootstrap</p>
@@ -119,10 +144,10 @@
                     </div>
 
                     <!-- card04 -->
-                    <div class="col-6 card flex-row mb-3 p-0 pr-1 border-0" id="card04"> 
-                        <div class="pr-1 w-100 cardBox">
+                    <div class="col-12 col-md-6 card flex-row mb-3 p-0 pr-md-1 border-0" id="card04"> 
+                        <div class="pr-0 pr-md-1 w-100 cardBox">
                             <div class="card-img h-100" style="background-image: url('./images/20230321_john-walton_technical_041e.jpg');"></div>        
-                            <div class="card-img-overlay mt-auto mr-1" id="cardTab">
+                            <div class="card-img-overlay mt-auto mr-0 mr-md-1" id="cardTab">
                                 <a href="https://johnwalton.photography" class="fillFig">
                                 <h5 class="card-title">Project 4</h5>
                                 <p class="card-text">ES6 and Node JS</p>
@@ -132,10 +157,10 @@
                     </div>
 
                   <!-- card05 -->
-                  <div class="col-6 card flex-row mb-3 p-0 pl-1 border-0" id="card05"> 
-                    <div class="pl-1 w-100 cardBox">
+                  <div class="col-12 col-md-6 card flex-row mb-3 p-0 pl-md-1 border-0" id="card05"> 
+                    <div class="pl-0 pl-md-1 w-100 cardBox">
                         <div class="card-img h-100" style="background-image: url('./images/20230321_john-walton_technical_051e.jpg');"></div>        
-                        <div class="card-img-overlay mt-auto ml-1" id="cardTab">
+                        <div class="card-img-overlay mt-auto ml-0 ml-md-1" id="cardTab">
                             <a href="https://johnwalton.photography" class="fillFig">
                             <h5 class="card-title">Project 5</h5>
                             <p class="card-text">React JS</p>
@@ -147,9 +172,6 @@
 
                 </div>
             </div>
-
-            <!-- COLUMN BREAK HACK--> 
-            <div class="w-100 m-0 p-0"></div>
 
             <div class="row w-100 ml-0 " id="skills">
                 <!-- //SKILLS -->
@@ -182,13 +204,6 @@
             </div>
 
             <div class="row w-100 ml-0 border-top border-light" id="contact">
-                <!-- //CONTACT -->
-                <!-- <nav class="nav col-12 w-100 h-auto py-4 text-light flex-column flex-md-row align-items-start justify-content-md-center align-items-md-center nav-fill px-5" id="lowerContacts">
-                    <a href="#" class="nav-item text-white h5">linkedIn</a>
-                    <a href="#" class="nav-item text-white h5">gitHub</a>
-                    <a href="#" class="nav-item text-white h5">07905 311 888</a>
-                    <a href="#" class="nav-item text-white h5">email@johnwalton.uk</a>
-                </nav> -->
                 <div class="col-12 col-md-2 text-light h5 pt-2 pl-4 my-0 border-top border-light" id="contactTab">contact</div>              
                 <div class="col-12 col-md-10 border-top text-white h6 m-0" id="footerNav">
                     <ul class="nav nav-fill flex-column align-items-stretch flex-md-row align-items-md-center h-100">
@@ -211,10 +226,7 @@
 
             </div>
         <!-- </nav> -->
-            
-        <!-- All hyperlinks should have a hover effect.
-        All buttons should display a box shadow upon hover. -->        
-        
+
         <footer>
             <div class="row" id="copyRight">
                 <small class="mx-auto my-4">®2023 John Walton</small>
@@ -223,13 +235,6 @@
 
    <!-- end of page container -->
     </div>
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
