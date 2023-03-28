@@ -5,6 +5,7 @@
     --tabHeight: 100px;
     --cardHeight: 150px;
     --skillsHeight: auto;
+    --portraitSize: 200px;
 
 
     --mainColor: silver;
@@ -96,7 +97,16 @@ nav a:hover {
     /* border: var(--redBox); */
  }
 
- #aboutTab, #projectsTab, #skillsTab, #backtoTop {
+.img-thumbnail {
+  background-image: url(../images/20221119_john-walton_self-portrait_104e.jpg);
+  height: var(--portraitSize);
+  width: var(--portraitSize);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+} 
+
+ #aboutTab, #projectsTab, #skillsTab, #backtoTop, #contactTab {
     background-color: var(--forestGreen);
     height: var(--tabHeight); 
  }
@@ -177,12 +187,20 @@ color: white;
 }
 
 #lowerContacts {
-  background-color: var(--forestGreen);  
-  height: 100px;
-  border: var(--redBox);
-  width: 100%;
+  /* background-color: var(--forestGreen);   */
+  /* height: 100px; */
+  /* border: var(--redBox); */
+  /* width: 100%; */
 }
 
+#footerNav {
+  background-color: var(--forestGreen);
+
+ }
+
+ #footerNav li a:hover {
+  color: darkorange !important;
+}
 
 #backtoTop {
   /* border: var(--redBox); */
@@ -194,11 +212,11 @@ color: white;
 }
 
 #footer {
-  border: var(--redBox);
+  /* border: var(--redBox); */
 }
 
 #copyRight {
-  border: var(--redBox);
+  /* border: var(--redBox); */
 }
 
 /* RESPONSIVE MEDIA QUERIES */
@@ -219,12 +237,22 @@ color: white;
     --skillsHeight: 450px;
     --tabHeight: auto;
   }
+#contactTab {
+  height:150px;
+  border-right: 1px solid white;
+}
+
+#footerNav ul li {border-top: 0 !important;}
+  /* #footerNav {border-top: 0 !important;} */
  }
  
  /* Large devices (desktops, 992px and up) */
  @media (min-width: 992px) {
-  :root {--cardHeight: 300px;}
+  :root {--cardHeight: 300px;
+  --portraitSize:300px;
   }
+  }
+
 
  
  /* Extra large devices (large desktops, 1200px and up) */

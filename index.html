@@ -25,8 +25,10 @@
                 <!-- add Navbar -->
                 <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div> -->
                 <div class="col-12 col-md-2 navbar flex-column justify-content-start align-items-start text-left text-white navbar-dark pl-4" id="navBar">
-                    <img src="./graphics/favicon.ico" class="navbar-brand mt-2" alt="forestDean logo">
-                    <nav class="nav flex-column w-100 mt-5 h3">
+                    <a class="navbar-brand" href="#">
+                        <img src="./graphics/favicon.ico" class="navbar-brand mt-2" alt="forestDean logo">
+                    </a>
+                    <nav class="nav flex-column w-100 mt-5 h4">
                             <a href="#about" class="text-white mb-4">about</a>
                             <a href="#projects" class="text-white mb-4">projects</a>
                             <a href="#skills" class="text-white mb-4">skills</a>
@@ -35,14 +37,14 @@
                 </div>
         
 
-                <div class="col-12 col-md-10 jumbotron jumbotron-fluid bg-white pb-2 border-0"  id="header">
+                <div class="col-12 col-md-10 jumbotron jumbotron-fluid bg-white pb-2 border-0 mt-3 mt-md-0"  id="header">
                     <!-- Hero section / Jumbotron / add portrait picture -->
-                    <div class="container-fluid row justify-content-around headerCont">
-                        <img src="./images/20221119_john-walton_self-portrait_104e.jpg" class="img-thumbnail"  id="portrait" height="300" width="300" alt="">
-                        <div class="text-left" id="topContact">
+                    <div class="container-fluid row justify-content-around headerCont pt-0">
+                        <div class="img-thumbnail mx-4"  id="portrait" height="300" width="300" alt=""></div>
+                        <div class="text-center text-md-left mx-4 mt-5 mt-sm-0" id="topContact">
                             <h1>John Walton</h1>
                             <h2 class="">web developer</h2>
-                            <ul class="p-1">
+                            <ul class="p-1 d-none d-md-block">
                                 <li><a href="#" class="text-muted">linkedIn</a></li>
                                 <li><a href="#" class="text-muted">gitHub</a></li>
                                 <li><a href="#" class="text-muted">07905 311 888</a></li>
@@ -59,7 +61,7 @@
             <div class="row border-0" id="about">
                 <!-- //ABOUT -->
                 <div class="col-12 col-md-2 text-light h5 pt-2 pl-4 my-0 border-top border-light" id="aboutTab">about</div>
-                <div class="col-12 col-md-10 px-5 pb-3 pt-2 border-0" id="aboutText">
+                <div class="col-12 col-md-10 px-5 pb-3 pt-2 my-2" id="aboutText">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium odio nec lorem ultrices, sit amet malesuada elit elementum. Donec at ante ut nunc varius aliquet ac a lorem. Nulla ultricies orci sed mi ultrices laoreet. Nulla tincidunt rhoncus dui eleifend iaculis. Ut facilisis sem dolor, sit amet fermentum magna rhoncus quis. Duis quis nulla semper, dignissim lacus fermentum, dignissim libero. In sed diam dui. Vestibulum eget tempor nisi. Mauris vitae lacus malesuada velit faucibus efficitur et vel dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
                     </p>
                     <p>Quisque sit amet leo tincidunt augue tempor eleifend nec id nisl. Nulla ligula erat, consequat eu interdum id, fermentum non massa. Integer vel nisl et ipsum facilisis ullamcorper. Pellentesque vel tristique ipsum, ut convallis mauris. Sed vestibulum erat non elit efficitur, in tristique arcu ultrices. Nullam sit amet auctor nisl. Sed mi massa, malesuada et tempor ut, aliquet at purus. Phasellus ultrices pretium odio vel facilisis. Phasellus a nulla ut leo finibus tincidunt eu sit amet augue.
@@ -72,7 +74,7 @@
             <div class="row" id="projects">
                 <!-- //PROJECTS -->
                 <div class="col-12 col-md-2 text-light h5 pt-2 pl-4 my-0 border-top border-light" id="projectsTab">projects</div>
-                <div class="col-12 col-md-10">
+                <div class="col-12 col-md-10 my-2 my-md-0">
                     
                     <!-- nested row -->
                     <div class="row mx-1 p-2">
@@ -154,7 +156,7 @@
                 <div class="col-12 col-md-2 text-light h5 pt-2 pl-4 my-0 border-top border-light" id="skillsTab">skills</div>              
                 <div class="col-12 col-md-10 m-0">
 
-                    <div class="d-flex flex-column flex-wrap w-auto  p-4 mr-n2" id="skillsList">
+                    <div class="d-flex flex-column flex-wrap w-auto p-1 p-md-4 mr-n2 my-3" id="skillsList">
                         <div class="px-3 h4">// JavaScript</div>
                         <div class="px-3 h4">// HTML5</div>
                         <div class="px-3 h4">// CSS, Flexbox & Grid</div>
@@ -181,19 +183,30 @@
 
             <div class="row w-100 ml-0 border-top border-light" id="contact">
                 <!-- //CONTACT -->
-                <nav class="nav col-12 border-0 w-100 text-light justify-content-center align-items-center nav-fill px-5" id="lowerContacts">
+                <!-- <nav class="nav col-12 w-100 h-auto py-4 text-light flex-column flex-md-row align-items-start justify-content-md-center align-items-md-center nav-fill px-5" id="lowerContacts">
                     <a href="#" class="nav-item text-white h5">linkedIn</a>
                     <a href="#" class="nav-item text-white h5">gitHub</a>
                     <a href="#" class="nav-item text-white h5">07905 311 888</a>
                     <a href="#" class="nav-item text-white h5">email@johnwalton.uk</a>
-                </nav>
+                </nav> -->
+                <div class="col-12 col-md-2 text-light h5 pt-2 pl-4 my-0 border-top border-light" id="contactTab">contact</div>              
+                <div class="col-12 col-md-10 border-top text-white h6 m-0" id="footerNav">
+                    <ul class="nav nav-fill flex-column align-items-stretch flex-md-row align-items-md-center h-100">
+                        <li class="nav-item"><a href="https://www.linkedin.com/in/forestdean/" class="nav-link text-white my-4 my-md-auto fillFig">LinkedIn</a></li>
+                        <li class="nav-item border-top "><a href="https://github.com/forestDean" class="nav-link text-white py-4 fillFig">GitHub</a></li>
+                        <li class="nav-item border-top"><a href="tel:+07905311408" class="nav-link text-white py-4 fillFig">+44 (0) 7905 311 888</a></li>
+                        <li class="nav-item border-top"><a href="#" class="nav-link text-white py-4 fillFig">email@johnwalton.uk</a></li>
+                    </ul>
+                </div>
+            </div>
+
           </div>
 
         </main>
         
         <!-- //BACK-TO-TOP -->
         <!-- <nav> -->
-            <div class="row w-auto mt-2 px-3 pb-2 d-block d-md-none">
+            <div class="row w-auto mt-3 px-3 pb-2 d-block d-md-none">
                 <a class="col-12 btn btn-dark btn-lg btn-block py-5 mx-0" href="#header" role="button" id="backtoTop">Back to Top</a>
 
             </div>
