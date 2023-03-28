@@ -1,6 +1,8 @@
 :root {
     --page-background: silver;
     --forestGreen: darkolivegreen;
+    --forestGreenBox: 1px solid darkolivegreen;
+
     --mainColor: silver;
     --redBox: 1px solid red;
     --blueBox: 1px solid blue;
@@ -100,22 +102,23 @@ nav a:hover {
 
 
 #card01 {
-
+  /* border: var(--blueBox); */
 }
 
-#card01, #card02, #card03 {
+#card01, #card02, #card03, #card04, #card05 {
   height: var(--cardHeight);
 }
 
 .cardBox {
   position: relative;
+
 }
 
 .card-img {
   background-repeat: no-repeat; 
   background-size: cover;
   background-position: center;
-  /* border: var(--blueBox); */
+  border: var(--forestGreenBox);
 }
 
 .card-img-overlay {
